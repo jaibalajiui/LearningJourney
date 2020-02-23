@@ -1,0 +1,9 @@
+<p>directives works!</p>
+
+
+<h2> showing numbers </h2>
+<ul *ngFor="let i of nos">
+  <li *ngIf="i%2!==0 && i%2!==1" appHighlight [numType]="'str'">{{i}}</li>
+  <li *ngIf="i%2 == 0" appHighlight [numType]="'even'"> Even : {{i}} </li>
+  <li *ngIf="i%2 == 1" appHighlight [numType]="'odd'"> Odd : {{i}} </li>
+</ul>
