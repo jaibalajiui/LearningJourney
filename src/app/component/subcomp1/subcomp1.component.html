@@ -1,0 +1,8 @@
+<p>subcomp1 works!</p>
+<p>param value {{param}}</p>
+
+<ng-content></ng-content>
+
+<button (click)="changeMe()">Click me</button>
+
+<app-subcomp2 (out)="display($event)"></app-subcomp2>
